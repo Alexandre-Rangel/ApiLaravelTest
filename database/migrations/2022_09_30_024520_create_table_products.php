@@ -18,7 +18,7 @@ class CreateTableProducts extends Migration
             $table->string('name');
             $table->text('description');
             $table->enum('brand', ['Electrolux', 'Brastemp', 'Fischer', 'Samsung', 'LG']);
-            $table->int('voltage');
+            $table->integer('voltage');
             $table->timestamps();
         });
     }
